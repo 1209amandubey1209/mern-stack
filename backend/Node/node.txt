@@ -1,0 +1,27 @@
+======================================nodejs=========================================
+1-About nodejs
+2-HTTP(module)
+          -get
+          -put
+          -patch
+          -delete......
+                ...........etc
+3-create server
+a-createServer
+b-write()       /// write content on browser
+c-end()          // res end 
+d-listen()        // serve on url (locatlhost)
+e-port        // address
+        
+            - const myserver=require("http");
+
+              const server=myserver.createServer((req,res)=>{
+              res.write("server is running");
+              res.end();
+                    })
+
+                   server.listen(7088,()=>{
+                   console.log("running");
+                        });
+
+4-Routing:
